@@ -62,3 +62,10 @@ SELECT SUM(total_sales), emp_id
 FROM works_with
 GROUP BY emp_id;
 
+-- query to group employee be their sex and get employees, firstname with letter 'An'  
+SELECT sex, COUNT(sex) AS CountSex
+FROM employee
+WHERE first_name LIKE 'An%'
+GROUP BY sex
+ORDER BY salary ASC;
+
